@@ -43,7 +43,7 @@ import AllOptionGenerate from './Components/Common/flashcards/AllOptionGenerate'
 const router = createBrowserRouter([
 
   {
-    path: "/Elearning-Platform",
+    path: "/OnlineTeachingPlatform",
     element: <HomePage/>,
   },
   {
@@ -51,133 +51,133 @@ const router = createBrowserRouter([
     element: <HomePage/>,
   },
   {
-    path: "/Elearning-Platform/studymaterial",
+    path: "/OnlineTeachingPlatform/studymaterial",
     element: <StudyMaterial/>,
   },
   {
-    path: "/Elearning-Platform/mycourse",
+    path: "/OnlineTeachingPlatform/mycourse",
     element: <MyCourses/>,
   },
 {
-  path: "/Elearning-Platform/purchasecourse",
+  path: "/OnlineTeachingPlatform/purchasecourse",
   element: <PurchaseCourse/>,
 },
 
   {
-    path: "/Elearning-Platform/myprofile",
+    path: "/OnlineTeachingPlatform/myprofile",
     element: <Profile/>,
   },
   {
-    path:"/Elearning-Platform/createaccount",
+    path:"/OnlineTeachingPlatform/createaccount",
     element: <RenderCreateAccount/>
   },
   {
-    path: "/Elearning-Platform/login",
+    path: "/OnlineTeachingPlatform/login",
     element: <LoginForm/>,
   },
   {
-    path: "/Elearning-Platform/coursevideo",
+    path: "/OnlineTeachingPlatform/coursevideo",
     element: <CourseVideo/>,
   },
   {
-    path: "/Elearning-Platform/instututelogin" ,
+    path: "/OnlineTeachingPlatform/instututelogin" ,
     element: <InstituteLoginForm/>,
   },
   {
-    path: "/Elearning-Platform/kidscontent" ,
+    path: "/OnlineTeachingPlatform/kidscontent" ,
     element: <Kidscontent/>
   },
   {
-    path: "/Elearning-Platform/jrcollege",
+    path: "/OnlineTeachingPlatform/jrcollege",
     element: <JrCollege/>,
   },
   {
-    path: "/Elearning-Platform/primary",
+    path: "/OnlineTeachingPlatform/primary",
     element: <Primary/>,
   },
   {
-    path: "/Elearning-Platform/ugpg",
+    path: "/OnlineTeachingPlatform/ugpg",
     element: <UgCourses/>,
   },
   {
-    path: "/Elearning-Platform/government" ,
+    path: "/OnlineTeachingPlatform/government" ,
     element: <Government/>,
   },
   {
-    path: "/Elearning-Platform/codingcontent"  ,
+    path: "/OnlineTeachingPlatform/codingcontent"  ,
     element: <CodingContent/>,
   },
   {
-    path: "/Elearning-Platform/creativitycontent"  ,
+    path: "/OnlineTeachingPlatform/creativitycontent"  ,
     element: <CreativityContent/>,
   },
   {
-    path: "/Elearning-Platform/studymaterial/studycreativity"  ,
+    path: "/OnlineTeachingPlatform/studymaterial/studycreativity"  ,
     element: <StudyCreativity/>,
   },
   {
-    path: "/Elearning-Platform/studymaterial/studyjrcollege" ,
+    path: "/OnlineTeachingPlatform/studymaterial/studyjrcollege" ,
     element: <StudyJrCollege/>,
   },
   {
-    path: "/Elearning-Platform/studymaterial/studyprimary" ,
+    path: "/OnlineTeachingPlatform/studymaterial/studyprimary" ,
     element: <StudyPrimary/>,
   },
   {
-    path: "/Elearning-Platform/studymaterial/studycoding" ,
+    path: "/OnlineTeachingPlatform/studymaterial/studycoding" ,
     element: <StudyCoding/>,
   },
  
   {
-    path: "/Elearning-Platform/studymaterial/studykids" ,
+    path: "/OnlineTeachingPlatform/studymaterial/studykids" ,
     element: <StudyKidsContent/>,
   },
   {
-    path: "/Elearning-Platform/studymaterial/studyugpg" ,
+    path: "/OnlineTeachingPlatform/studymaterial/studyugpg" ,
     element: <StudyUgPg/>,
   },
  
   {
-    path: "/Elearning-Platform/studymaterial/studygovernment" ,
+    path: "/OnlineTeachingPlatform/studymaterial/studygovernment" ,
     element: <StudyGovernment/>,
   },
  
   {
-    path: "/Elearning-Platform/purchasecourse/purchasecreativity"  ,
+    path: "/OnlineTeachingPlatform/purchasecourse/purchasecreativity"  ,
     element: <PurchaseCreativity/>,
   },
   {
-    path: "/Elearning-Platform/purchasecourse/purchasejrcollege" ,
+    path: "/OnlineTeachingPlatform/purchasecourse/purchasejrcollege" ,
     element: <PurchaseJrCollege/>,
   },
   {
-    path: "/Elearning-Platform/purchasecourse/purchaseprimary" ,
+    path: "/OnlineTeachingPlatform/purchasecourse/purchaseprimary" ,
     element: <PurchasePrimary/>,
   },
   {
-    path: "/Elearning-Platform/purchasecourse/purchasecoding" ,
+    path: "/OnlineTeachingPlatform/purchasecourse/purchasecoding" ,
     element: <PurchaseCoding/>,
   },
  
   {
-    path: "/Elearning-Platform/purchasecourse/purchasekids" ,
+    path: "/OnlineTeachingPlatform/purchasecourse/purchasekids" ,
     element: <PurchaseKids/>,
   },
   {
-    path: "/Elearning-Platform/purchasecourse/purchaseugpg" ,
+    path: "/OnlineTeachingPlatform/purchasecourse/purchaseugpg" ,
     element: <PurchaseUgPg/>,
   },
  
   {
-    path: "/Elearning-Platform/purchasecourse/purchasegovernment" ,
+    path: "/OnlineTeachingPlatform/purchasecourse/purchasegovernment" ,
     element: <PurchaseGovernment/>,
   },
   {
-    path: "/Elearning-Platform/mycourse/coursevideo" ,
+    path: "/OnlineTeachingPlatform/mycourse/coursevideo" ,
     element: <CourseVideo/>,
   },
   {
-    path: 'Elearning-Platform/mycourse/webdev' ,
+    path: '/OnlineTeachingPlatform/mycourse/webdev' ,
     element: <AllOptionGenerate/>,
   },
  
