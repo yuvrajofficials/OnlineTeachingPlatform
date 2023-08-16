@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OnlineTeachingPlatform/static/css/main.a894c7cd.css",
-    "main.js": "/OnlineTeachingPlatform/static/js/main.413ae221.js",
+    "main.js": "/OnlineTeachingPlatform/static/js/main.56654a35.js",
     "static/js/787.46926d8b.chunk.js": "/OnlineTeachingPlatform/static/js/787.46926d8b.chunk.js",
     "static/media/Logo.png": "/OnlineTeachingPlatform/static/media/Logo.0009a3a8495da58fdeb9.png",
     "static/media/roboto-latin-500-normal.woff2": "/OnlineTeachingPlatform/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -62,11 +62,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/OnlineTeachingPlatform/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/OnlineTeachingPlatform/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "main.a894c7cd.css.map": "/OnlineTeachingPlatform/static/css/main.a894c7cd.css.map",
-    "main.413ae221.js.map": "/OnlineTeachingPlatform/static/js/main.413ae221.js.map",
+    "main.56654a35.js.map": "/OnlineTeachingPlatform/static/js/main.56654a35.js.map",
     "787.46926d8b.chunk.js.map": "/OnlineTeachingPlatform/static/js/787.46926d8b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a894c7cd.css",
-    "static/js/main.413ae221.js"
+    "static/js/main.56654a35.js"
   ]
 }
