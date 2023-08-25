@@ -7,13 +7,13 @@ const StudyMaterialRender = () => {
     <>
       <div class="inline-flex overflow-hidden bg-white rounded-lg dark: rtl:flex-row-reverse dark: dark:divide-gray-700 w-screen justify-center border-b-2">
              
-             <ButtonForStudyMaterial Linkofpage="/Elearning-Platform/studymaterial/studykids"typeofstudyMaterial="Kids "/>
-             <ButtonForStudyMaterial Linkofpage="/Elearning-Platform/studymaterial/studyprimary"typeofstudyMaterial="Primary"/>
-             <ButtonForStudyMaterial Linkofpage="/Elearning-Platform/studymaterial/studyjrcollege"typeofstudyMaterial="Jr. College"/>
-             <ButtonForStudyMaterial Linkofpage="/Elearning-Platform/studymaterial/studyugpg"typeofstudyMaterial="UG & PG"/>
-             <ButtonForStudyMaterial Linkofpage="/Elearning-Platform/studymaterial/studycoding"typeofstudyMaterial="Coding"/>
-             <ButtonForStudyMaterial Linkofpage="/Elearning-Platform/studymaterial/studygovernment"typeofstudyMaterial="Government"/>
-             <ButtonForStudyMaterial Linkofpage="/Elearning-Platform/studymaterial/studycreativity"typeofstudyMaterial="Creativity"/>
+             <ButtonForStudyMaterial Linkofpage="/OnlineTeachingPlatform/studymaterial/studykids"typeofstudyMaterial="Kids "/>
+             <ButtonForStudyMaterial Linkofpage="/OnlineTeachingPlatform/studymaterial/studyprimary"typeofstudyMaterial="Primary"/>
+             <ButtonForStudyMaterial Linkofpage="/OnlineTeachingPlatform/studymaterial/studyjrcollege"typeofstudyMaterial="Jr. College"/>
+             <ButtonForStudyMaterial Linkofpage="/OnlineTeachingPlatform/studymaterial/studyugpg"typeofstudyMaterial="UG & PG"/>
+             <ButtonForStudyMaterial Linkofpage="/OnlineTeachingPlatform/studymaterial/studycoding"typeofstudyMaterial="Coding"/>
+             <ButtonForStudyMaterial Linkofpage="/OnlineTeachingPlatform/studymaterial/studygovernment"typeofstudyMaterial="Government"/>
+             <ButtonForStudyMaterial Linkofpage="/OnlineTeachingPlatform/studymaterial/studycreativity"typeofstudyMaterial="Creativity"/>
            </div>
     </>
   )

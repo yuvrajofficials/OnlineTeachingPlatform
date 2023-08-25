@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'react-toastify/dist/ReactToastify.css';
+import { Routes, Route } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,createBrowserRouter,
-  RouterProvider,} from 'react-router-dom'
+import {
+  BrowserRouter, createBrowserRouter,
+  RouterProvider
+} from 'react-router-dom'
 
-import HomePage from './Components/allmainpages/HomePage' 
-import StudyMaterial from './Components/allmainpages/StudyMaterial' 
+import HomePage from './Components/allmainpages/HomePage'
+import StudyMaterial from './Components/allmainpages/StudyMaterial'
 import MyCourses from '././Components/allmainpages/MyCourses'
 import Profile from '././Components/allmainpages/Profile'
 import LoginForm from './Components/Common/forms/LoginForm'
@@ -39,166 +42,81 @@ import PurchaseJrCollege from './Components/Common/purchasecourse/PurchaseJrColl
 import PurchaseUgPg from './Components/Common/purchasecourse/PurchaseUgPg';
 import CourseVideo from './Components/Common/videoPlayers/CourseVideo';
 import AllOptionGenerate from './Components/Common/flashcards/AllOptionGenerate';
-
-const router = createBrowserRouter([
-
-  {
-    path: "/OnlineTeachingPlatform",
-    element: <HomePage/>,
-  },
-  {
-    path: "/",
-    element: <HomePage/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/studymaterial",
-    element: <StudyMaterial/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/mycourse",
-    element: <MyCourses/>,
-  },
-{
-  path: "/OnlineTeachingPlatform/purchasecourse",
-  element: <PurchaseCourse/>,
-},
-
-  {
-    path: "/OnlineTeachingPlatform/myprofile",
-    element: <Profile/>,
-  },
-  {
-    path:"/OnlineTeachingPlatform/createaccount",
-    element: <RenderCreateAccount/>
-  },
-  {
-    path: "/OnlineTeachingPlatform/login",
-    element: <LoginForm/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/coursevideo",
-    element: <CourseVideo/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/instututelogin" ,
-    element: <InstituteLoginForm/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/kidscontent" ,
-    element: <Kidscontent/>
-  },
-  {
-    path: "/OnlineTeachingPlatform/jrcollege",
-    element: <JrCollege/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/primary",
-    element: <Primary/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/ugpg",
-    element: <UgCourses/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/government" ,
-    element: <Government/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/codingcontent"  ,
-    element: <CodingContent/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/creativitycontent"  ,
-    element: <CreativityContent/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/studymaterial/studycreativity"  ,
-    element: <StudyCreativity/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/studymaterial/studyjrcollege" ,
-    element: <StudyJrCollege/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/studymaterial/studyprimary" ,
-    element: <StudyPrimary/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/studymaterial/studycoding" ,
-    element: <StudyCoding/>,
-  },
- 
-  {
-    path: "/OnlineTeachingPlatform/studymaterial/studykids" ,
-    element: <StudyKidsContent/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/studymaterial/studyugpg" ,
-    element: <StudyUgPg/>,
-  },
- 
-  {
-    path: "/OnlineTeachingPlatform/studymaterial/studygovernment" ,
-    element: <StudyGovernment/>,
-  },
- 
-  {
-    path: "/OnlineTeachingPlatform/purchasecourse/purchasecreativity"  ,
-    element: <PurchaseCreativity/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/purchasecourse/purchasejrcollege" ,
-    element: <PurchaseJrCollege/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/purchasecourse/purchaseprimary" ,
-    element: <PurchasePrimary/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/purchasecourse/purchasecoding" ,
-    element: <PurchaseCoding/>,
-  },
- 
-  {
-    path: "/OnlineTeachingPlatform/purchasecourse/purchasekids" ,
-    element: <PurchaseKids/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/purchasecourse/purchaseugpg" ,
-    element: <PurchaseUgPg/>,
-  },
- 
-  {
-    path: "/OnlineTeachingPlatform/purchasecourse/purchasegovernment" ,
-    element: <PurchaseGovernment/>,
-  },
-  {
-    path: "/OnlineTeachingPlatform/mycourse/coursevideo" ,
-    element: <CourseVideo/>,
-  },
-  {
-    path: '/OnlineTeachingPlatform/mycourse/webdev' ,
-    element: <AllOptionGenerate/>,
-  },
- 
-  
-]);
-
-
+import PageNotFound from './Components/Common/noncateragy/PageNotFound';
+import Dashboard from './Components/Common/user/Dashboard';
+import PrivateRoute from './Components/Common/routes/Private';
+import ForgotPass from './Components/Common/forms/ForgotPass';
+import AdminPrivateRoute from './Components/Common/routes/AdminPrivate';
+import AdminDashboard from './Components/Common/Admin/AdminDashboard';
+import UploadContent from './Components/Common/Admin/AdminContent/UploadContent';
+import MySpace from './Components/Common/Admin/AdminContent/Myspace';
+import OtherWork from './Components/Common/Admin/AdminContent/OtherWork';
+import Settings from './Components/Common/Admin/AdminContent/Settings';
+import UpdateContent from './Components/Common/Admin/AdminContent/UpdateContent';
+import UploadMaterial from './Components/Common/Admin/AdminContent/UploadStudyMaterial';
+import UsersAdmin from './Components/Common/Admin/AdminContent/UsersAdmin';
+import CreateCategory from './Components/Common/Admin/AdminContent/CreateCategory';
 
 
 const App = () => {
   return (
-   
-        <>
-  
-  
-  <RouterProvider router={router}/>
-  
-    
+    <>
+    <Routes>
+      <Route path="/OnlineTeachingPlatform" element={<HomePage />} />
+      <Route path="*" element={<PageNotFound />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial" element={<StudyMaterial />} />
+      <Route path="/OnlineTeachingPlatform/mycourse" element={<MyCourses />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse" element={<PurchaseCourse />} />
+      <Route path="/OnlineTeachingPlatform/myprofile" element={<Profile />} />
+      <Route path="/OnlineTeachingPlatform/createaccount" element={<RenderCreateAccount />} />
+      <Route path="/OnlineTeachingPlatform/login" element={<LoginForm />} />
+      <Route path="/OnlineTeachingPlatform/login/forgotpassword" element={<ForgotPass />} />
+      <Route path="/OnlineTeachingPlatform/coursevideo" element={<CourseVideo />} />
+      <Route path="/OnlineTeachingPlatform/instututelogin" element={<InstituteLoginForm />} />
+      <Route path="/OnlineTeachingPlatform/kidscontent" element={<Kidscontent />} />
+      <Route path="/OnlineTeachingPlatform/jrcollege" element={<JrCollege />} />
+      <Route path="/OnlineTeachingPlatform/primary" element={<Primary />} />
+      <Route path="/OnlineTeachingPlatform/ugpg" element={<UgCourses />} />
+      <Route path="/OnlineTeachingPlatform/government" element={<Government />} />
+      <Route path="/OnlineTeachingPlatform/codingcontent" element={<CodingContent />} />
+      <Route path="/OnlineTeachingPlatform/creativitycontent" element={<CreativityContent />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial/studycreativity" element={<StudyCreativity />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial/studyjrcollege" element={<StudyJrCollege />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial/studyprimary" element={<StudyPrimary />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial/studycoding" element={<StudyCoding />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial/studykids" element={<StudyKidsContent />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial/studyugpg" element={<StudyUgPg />} />
+      <Route path="/OnlineTeachingPlatform/studymaterial/studygovernment" element={<StudyGovernment />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse/purchasecreativity" element={<PurchaseCreativity />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse/purchasejrcollege" element={<PurchaseJrCollege />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse/purchaseprimary" element={<PurchasePrimary />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse/purchasecoding" element={<PurchaseCoding />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse/purchasekids" element={<PurchaseKids />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse/purchaseugpg" element={<PurchaseUgPg />} />
+      <Route path="/OnlineTeachingPlatform/purchasecourse/purchasegovernment" element={<PurchaseGovernment />} />
+      <Route path="/OnlineTeachingPlatform/mycourse/coursevideo" element={<CourseVideo />} />
+      <Route path='/OnlineTeachingPlatform/mycourse/webdev' element={<AllOptionGenerate />} />
+      <Route path="/OnlineTeachingPlatform/dashboard" element={<PrivateRoute />}>
+        <Route path="user" element={<Dashboard/>}/>
+      </Route>
+      <Route path="/OnlineTeachingPlatform/dashboard" element={<AdminPrivateRoute/>}>
+        <Route path="admin" element={<AdminDashboard/>}/>
+        <Route path="admin/uploadvideo" element={<UploadContent/>}/>
+        <Route path="admin/uploadmaterial" element={<UploadMaterial/>}/>
+        <Route path="admin/updatecontent" element={<UpdateContent/>}/>
+        <Route path="admin/otherwork" element={<OtherWork/>}/>
+        <Route path="admin/myspace" element={<MySpace/>}/>
+        <Route path="admin/mysettings" element={<Settings/>}/>
+        <Route path="admin/usersadmin" element={<UsersAdmin/>}/>
+        <Route path="admin/createcategory" element={<CreateCategory/>}/>
+      </Route>
+
+    </Routes>
+
   </>
-    
-  )
+
+)
 }
 
 export default App

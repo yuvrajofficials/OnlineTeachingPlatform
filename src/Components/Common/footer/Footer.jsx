@@ -1,8 +1,9 @@
 import React from 'react'
 import footercss from './Footer.css'
 import { GitHub, LinkedIn,Facebook,Twitter, Instagram, FacebookRounded } from '@mui/icons-material'
+import NewFooter from './NewFooter'
 
-const Footer = () => {
+const newFooter = () => {
     return (
 <>
 <div className='FooterBody  border-t-2 '>
@@ -93,5 +94,20 @@ const Footer = () => {
 </>
     )
 }
+
+
+const Footer = () => {
+  return (
+<>
+<NewFooter/>
+
+</>
+
+  ) 
+      
+    
+}
+
+
 
 export default Footer

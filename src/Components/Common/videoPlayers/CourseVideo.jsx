@@ -27,7 +27,7 @@ const videoSource = "https://youtu.be/K2VfC9ZYQss";
                 <ul class="playlist" id="playlist">
          
 
-                  <li> <ReactPlayer controls autoplay height={170} id="playlist2" className='rounded-sm' url="https://youtu.be/K2VfC9ZYQss"></ReactPlayer></li>
+                  <li> <ReactPlayer controls autoplay height={170} id="playlist2" className='rounded-sm' url="https://youtube.com/playlist?list=PLjVLYmrlmjGdDps6HAwOOVoAtBPAgIOXL"></ReactPlayer></li>
                   <h3 className=' m-2  text-center border-gray-800 ' >Title Video 1</h3>
                   
 
@@ -55,6 +55,10 @@ const videoSource = "https://youtu.be/K2VfC9ZYQss";
                  
                 </ul>
             </div>
+                <ReactPlayer controls autoplay height={400} id="playlist2" className='rounded-sm w-screen' url="https://youtube.com/playlist?list=PLjVLYmrlmjGdDps6HAwOOVoAtBPAgIOXL"></ReactPlayer>
+                  <h3 className=' m-2  text-center border-gray-800 ' >Title Video 1</h3>
+                  
+
         </div>
     </section>
       <Footer/>

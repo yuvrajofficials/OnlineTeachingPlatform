@@ -3,6 +3,10 @@ import Head from './Head'
 import headerCss from './header.css'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import toast, { Toaster } from 'react-hot-toast';
+import NewHeader from './NewHeader'
+import HeaderAdmin from './HeaderAdmin'
+import HeaderUser from './HeaderUser'
 
 const Header = (props) => {
   return (
@@ -17,7 +21,7 @@ const Header = (props) => {
     <div className='HeaderImg '>
       <Head />
       </div>
-    
+      
     </>
   )
 }

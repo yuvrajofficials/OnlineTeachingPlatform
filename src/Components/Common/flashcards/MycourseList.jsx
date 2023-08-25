@@ -14,7 +14,7 @@ const MycourseList = () => {
                <div class="flex flex-wrap -mx-4">
                   <div class="w-full md:w-1/2 xl:w-1/3 px-4">
                      <div class="bg-white rounded-lg overflow-hidden mb-10">
-                  <ComponentGenerate priceofcourse="1000" buyinglink='Elearning-Platform/mycourse/webdev' viewpagelink="https://notepad.pw/course1-platform" stageofcourse="Open " instructor="Yash" coursename="Web Development" imgSrcCourse="https://ventsabout.com/wp-content/uploads/2020/09/1c5bb2ce8ba9dc172d24646eff0ad495.jpg"/>
+                  <ComponentGenerate priceofcourse="1000" buyinglink='/OnlineTeachingPlatform/mycourse/webdev' viewpagelink="https://notepad.pw/course1-platform" stageofcourse="Open " instructor="Yash" coursename="Web Development" imgSrcCourse="https://ventsabout.com/wp-content/uploads/2020/09/1c5bb2ce8ba9dc172d24646eff0ad495.jpg"/>
                      </div>
                   </div>
                   <div class="w-full md:w-1/2 xl:w-1/3 px-4">

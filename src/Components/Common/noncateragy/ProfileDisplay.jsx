@@ -2,8 +2,10 @@ import React from 'react'
 import profilecss from './Profile.css'
 import FriendListGenerate from './FriendListGenerate'
 import StatisticsGenerater from './StatisticsGenerater'
+import { useAuth } from '../../../context/auth'
 const ProfileDisplay = () => {
-  return (
+   const [auth] = useAuth()
+    return (
     <>
 
 
@@ -56,7 +58,7 @@ const ProfileDisplay = () => {
             <div class="flex flex-col items-center -mt-20">
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/002/002/257/small/beautiful-woman-avatar-character-icon-free-vector.jpg" class="w-40 border-4 border-white rounded-full"/>
                 <div class="flex items-center space-x-2 mt-2">
-                    <p class="text-2xl">Amanda Ross</p>
+                    <p class="text-2xl">{auth?.user?.firstname}{" "}{auth?.user?.lastname}</p>
                     <span class="bg-blue-500 rounded-full p-1" title="Verified">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-100 h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path>
