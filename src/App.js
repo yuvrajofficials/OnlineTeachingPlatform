@@ -55,7 +55,7 @@ import Settings from './Components/Common/Admin/AdminContent/Settings';
 import UpdateContent from './Components/Common/Admin/AdminContent/UpdateContent';
 import UploadMaterial from './Components/Common/Admin/AdminContent/UploadStudyMaterial';
 import UsersAdmin from './Components/Common/Admin/AdminContent/UsersAdmin';
-import CreateCategory from './Components/Common/Admin/AdminContent/CreateCategory';
+import CreateCategoryPage from './Components/Common/Admin/AdminContent/CreateCategoryPage';
 
 
 const App = () => {
@@ -109,7 +109,7 @@ const App = () => {
         <Route path="admin/myspace" element={<MySpace/>}/>
         <Route path="admin/mysettings" element={<Settings/>}/>
         <Route path="admin/usersadmin" element={<UsersAdmin/>}/>
-        <Route path="admin/createcategory" element={<CreateCategory/>}/>
+        <Route path="admin/createcategory" element={<CreateCategoryPage/>}/>
       </Route>
 
     </Routes>

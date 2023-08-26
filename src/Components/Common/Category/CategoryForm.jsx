@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const CategoryForm = ({ handleSubmit, value, setValue }) => {
@@ -14,9 +15,10 @@ const CategoryForm = ({ handleSubmit, value, setValue }) => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-outline-primary">
           Submit
         </button>
+
       </form>
     </>
   );
